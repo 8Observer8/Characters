@@ -66,6 +66,10 @@ void Dialog::showAllCharacters()
     model->select();
     model->setEditStrategy( QSqlTableModel::OnRowChange );
     ui->tableView->setModel( model );
+
+    model->setHeaderData( 0, Qt::Horizontal, tr( "Номер" ) );
+    model->setHeaderData( 1, Qt::Horizontal, tr( "Персонаж" ) );
+    model->setHeaderData( 2, Qt::Horizontal, tr( "Количество" ) );
 }
 
 void Dialog::showCat()
@@ -81,6 +85,15 @@ void Dialog::showCat()
     model->select();
     model->setEditStrategy(QSqlTableModel::OnRowChange);
     ui->tableView->setModel(model);
+
+    model->setHeaderData( 0, Qt::Horizontal, tr( "Номер" ) );
+    model->setHeaderData( 1, Qt::Horizontal, tr( "Царство" ) );
+    model->setHeaderData( 2, Qt::Horizontal, tr( "Тип" ) );
+    model->setHeaderData( 3, Qt::Horizontal, tr( "Класс" ) );
+    model->setHeaderData( 4, Qt::Horizontal, tr( "Отряд" ) );
+    model->setHeaderData( 5, Qt::Horizontal, tr( "Семейство" ) );
+    model->setHeaderData( 6, Qt::Horizontal, tr( "Род" ) );
+    model->setHeaderData( 7, Qt::Horizontal, tr( "Вид" ) );
 }
 
 void Dialog::showDog()
@@ -96,4 +109,13 @@ void Dialog::showDog()
     model->select();
     model->setEditStrategy(QSqlTableModel::OnRowChange);
     ui->tableView->setModel(model);
+
+    model->setHeaderData( 0, Qt::Horizontal, tr( "Номер" ) );
+    model->setHeaderData( 1, Qt::Horizontal, tr( "Царство" ) );
+    model->setHeaderData( 2, Qt::Horizontal, tr( "Тип" ) );
+    model->setHeaderData( 3, Qt::Horizontal, tr( "Класс" ) );
+    model->setHeaderData( 4, Qt::Horizontal, tr( "Отряд" ) );
+    model->setHeaderData( 5, Qt::Horizontal, tr( "Семейство" ) );
+    model->setHeaderData( 6, Qt::Horizontal, tr( "Род" ) );
+    model->setHeaderData( 7, Qt::Horizontal, tr( "Вид" ) );
 }
