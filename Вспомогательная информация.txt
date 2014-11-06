@@ -1,0 +1,38 @@
+Characters
+
+CharactersTable
+
+id Character Number
+
+Cat
+
+Царство
+Тип
+Класс
+Отряд
+Семейство
+Род
+Вид
+
+Kingdom: Animalia
+Phylum:	Chordata
+Class:	Mammalia
+Order:	Carnivora
+Family:	Felidae
+Genus:	Felis
+Species:	F. catus
+
+INSERT INTO CatTable (`Kingdom`, `Phylum`, `Class`, `Order`, `Family`, `Genus`, `Species`) VALUES('Animalia', 'Chordata', 'Mammalia', 'Carnivora', 'Felidae', 'Felis', 'F. catus')
+
+INSERT INTO CatTable(Kingdom, Phylum, Class, Order, Family, Genus, Species) VALUES(`Animalia`, `Chordata`, `Mammalia`, `Carnivora`, `Felidae`, `Felis`, `F. catus`);
+
+Dog
+Kingdom:	Animalia
+Phylum:	Chordata
+Class:	Mammalia
+Order:	Carnivora
+Family:	Canidae
+Genus:	Canis
+Species:	C. lupus
+
+INSERT INTO CharactersTable (`Character`, `Number`) VALUES('Cat', '10')
